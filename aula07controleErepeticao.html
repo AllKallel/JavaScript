@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 07 - Estruturas de controle e repet</title>
+		
+	</head>
+	
+	<body>
+		<script>
+			/*----------------operadores de comparacao---------------
+			== igual a
+			=== igual em valor e tipo
+			!= diferente de
+			!== diferente em valor e topo
+			> maior que
+			< menor que
+			>= maior ou igual
+			<= menor ou igual
+			
+			------------------------logicos
+			&& e
+			|| ou
+			! não
+			
+			*/
+			var idade = 19;
+			var situacao = (idade >=18)? 'maior':'menor';
+			
+			var n = 5; 
+			if(n > 5){
+				console.log('primeira condição verdadeira');
+			}else if(n == 5){
+				console.log('segunda condição verdadeira');
+			} else {
+			console.log('condição falsa');
+			}
+			
+			console.log(situacao);
+			
+			var diaSemana = new Date();
+			
+			switch(diaSemana){
+			case 6:
+			console.log('Hoje é sabado, dia de balada');
+			break;
+			
+			case 0:
+			console.log('Hoje é domingo, dia de curar a ressaca');
+			
+			default: 
+			console.log('dia  normal, trabalho e estudo');
+			
+			};
+			
+			var linguagens = ['php','java','c++','asp','delphi'];
+			
+			/*for (i =0; i < linguagens.length; i++){
+				if(i == 2) break;
+				console.log(linguagens[i]);
+				
+				//o continua pula uma iteração do codigo
+				//o break pula para fra do for, encerrando o comando
+			}*/
+			var contador = 5;
+			while(contador < linguagens.length){
+				console.log(linguagens[contador]);
+				contador++;
+			};
+			
+			do{
+				console.log(linguagens[contador]);
+				contador++;
+			}while(contador < linguagens.length);
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+	
+</html>

@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 05 - Strings e números</title>
+		
+	</head>
+	
+	<body>
+		<script>
+			var txt = 'texto \'"qualquer"';
+			// "\" permite o uso de caracteres especiais.
+			
+			console.log(txt.toLowerCase());
+			//indexOf() faz busca no corpo do texto e mostra a primeira ocorrencia
+			//LastIndexOfx() faz o mesmo, porém mostra a ultima ocorrência da busca;
+			//search() funciona do mesmo jeito que o indexOf, mas ele aceita espreções regulares
+			//slice() estrai partes de uma strng, são definidos 			console.log(txt.slice(0,5));
+			//substr() faz uma busca pela quantidade de caracteres 
+			//iniciando de um determinado ponto	console.log(txt.substr(0,16));
+			//replace() faz uma substituição de ocorrecia por uma outra palavra. console.log(txt.replace('texto','dia'));
+			//toUpperCase() conver a string para caixa alta, letras maiúsculas. console.log(txt.toUpperCase());
+			//tolowerCase() faz o inverso. console.log(txt.toLowerCase());
+			
+			var num =98.658;
+			
+			console.log(num.toPrecision(2));
+			// toFixed() fixa um numero de casas decimais para o numero. o numero é arredondado.
+			// toPrecision() retorna uma quantidade de caracteres do numero. também é arredondado.
+		</script>
+	</body>
+	
+</html>

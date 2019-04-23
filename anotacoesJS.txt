@@ -1,0 +1,37 @@
+##################################<<<<<<anotações JavaScript>>>>>>>>>####################################################
+Aula01{
+		- É uma liguagem de progrmação client side, linguagem interpretada do lado do cliente. Também pode ser interpretada do
+		lado do servidor, com platformas, como por exemplo o nodeJS.
+	
+		- ela permite fazer alterações no comportamento do navegador:
+			*abrir e fechar janelas;
+			*avançar ou retroceder no histórico de navegação;
+			*chamar o dialogo de impressão de rquivos do seu navegador;
+			*alterar oconteudo html;
+			*alterar um atributo de tags;
+			*alterar o css, os estilos da pagina;
+			*ocultar ou mostrar elementos da sua pagina;
+			
+		-desvantagem: como o codigo é executado do lado do cliente ele permite que o codigo seja alterado. E também, tem o proble
+		ma de compatibilidade com o browser.
+		
+		- o codigo js pode ser escrito ou chamado, tanto no body, quanto na head. o mais indicado é que o mesmo seja colocado
+		no final do body.
+	};
+	
+	
+Aula02{
+		-toda linha deve ser finalizada com ponto e virgula ";". isso indica que a instrução terminou. 
+		- o js é case sensitive. ou seja, faz diferenciação entre caixa auta e baixa. 
+		- pavalras reservadas:
+			-function
+			-var: utilizada para declaração de variaveis.
+			-break
+			-return
+			-continue
+			
+			
+			-console.log: coloca informações na are de console do navegador. 
+			
+		-operdores: servem para operar/ alterar o valor de alguma variavel, fazer alguma operação. 	
+	}

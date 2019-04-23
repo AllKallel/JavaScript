@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 10 - BOM JS</title>
+		
+	</head>
+	
+	<body>
+	
+			<p id="a"></p>
+		
+		
+			<input type="button" value="clearTimeout" onclick="clearTimeout(msg)" />
+			<input type="button" value="clearIterval" onclick="clearInterval(msg2)" />
+			
+		
+			
+		
+		
+		<script>
+		//	console.log(window.location.href); //retorna o endereço
+		//window.history.back(); // volta no historco de navegação
+		//window.history.forward(); // avaça no historco de navegação
+		
+		//window.localStorage.setItem('nome', 'Ricardo');
+		//window.sessionStorage.setItem('nome1','pedeo');
+		//document.getElementById('a').innerHTML = window.localStorage.getItem('nome');
+			
+			//var janela = window.open('endereço','nome','larg altur',);
+			//janela.document.write('isso é um texto para minha janela');
+			//janela.opener.document.write('Isso é um texto para minha janela principal');
+			
+			//var msg = setTimeout(msgtimeout, 2000);
+				//nesse caso o função é chamada sem os parenteses.
+				//o clearTimeout() desativa a execução do setTimeout, mas pra usalo é necessário criar uma variável
+				//que recebe o valor de setTimeout.
+			//function msgtimeout(){
+			//	console.log('Msg via');			}
+				
+			//var msg2 = setInterval(msginterval, 1000);
+				//o clearTimeout() tqmbém funciona. mas o correto é usar o clearInterval()
+			//function msginterval(){
+			//		console.log('Msg via');				}
+			
+			var interval = setInterval(verificaFoco, 1000);
+			var contador = 0;
+			function verificaFoco (){
+				if(document.hasFocus()){
+					contador++;
+					console.log(contador);
+					if(contador >= 10){
+						msgtimeout();
+						clearInterval(interval);
+					}					
+				}
+			}
+			
+			function msgtimeout(){
+				document.elementById('a').innerHTML = 'Obrigado por acessar meu site';
+				
+			}
+			
+		</script>
+	</body>
+	
+</html>

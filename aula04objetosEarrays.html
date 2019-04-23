@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 04 - Objetos e arrays</title>
+		
+	</head>
+	
+	<body>
+		<script>
+			// variaveis simples;
+			var nome = 'kallel'; 
+			var sobrenome = 'moraes';
+			var idade = '1.3';
+			
+			// array;
+			var frutas = ['mamão', 'açaí', 'bacurí'];
+			
+			frutas.unshift('manga');
+			
+			console.log(frutas.join(' - '));
+			// toString() devolve os dados no formato string. Texto. console.log(frutas.toString);
+			// length() devolve o tamanho do array     console.log(frutas.length);
+			// push() empurra/adiciona o dado no final do array; frutas.push('manga');
+			// unshift() adiciona o item no inicio. frutas.unshift('manga');
+			// pop() retira o ultimo item.  frutas.pop();
+			// shift() remove o primeri item frutas.shift('manga');
+			// sort() ordena o array 
+			// reverse() invert a ordem do array
+			// join() concatena algo com os itens do array; frutas.join(' - ');
+
+			
+			
+			var pessoa = {
+				nome: 'kallel', 
+				sobrenome: 'moraes', 
+				idade: '1.3', 
+				andar: function(){
+							alert("andando");
+						}
+			};
+			
+			//console.log(pessoa.andar());
+			
+		</script>
+	</body>
+	
+</html>

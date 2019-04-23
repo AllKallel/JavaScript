@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 09 - DOM parte 1</title>
+		
+	</head>
+	
+	<body>
+	<!-- O BODY tem uma função chamada onload que serve para carregara algo durante o load-->
+	
+		<!-- <img id="imagem" src="image.jpg" alt="texto alternativo"> -->
+		<!-- <p id="demo">olá mundo de novas possibilidades</p> -->
+		<!-- <h1 onclick = "this.innerHTML = 'Te amo! Eu e Kallel te AMAMOS!!!'">Sara, click aqui</h2> -->
+		
+		<!--<select name="" id="demo" onchange="funcao()">
+		O onchange atua com a mudança. toda vez que algo for alterado o evento onchange é chamado
+			<option value="option1">option1</option>
+			<option value="option2">option2</option>
+			<option value="option3">option3</option>
+		</select>-->
+		
+		
+		<h1 id="demo" onmouseover="funcao1(this)" onmouseout="funcao2(this)">Passe o mause aqui</h1>
+		
+		
+		<script>
+			/*quando uma pagina é carregada o browser cria  o DOM que permite ao programador selecionar, alterar,
+			adicionar ou deletar elementos html*/
+			
+			//document.getElementById('demo').innerHTML = 'Texo do meu parágrafo';
+			//console.log(document.getElementById('p'));
+			//var x = document.getElementsClassName('exemplo');
+			//var x = document.querySelectorAll('div.exemplo');
+			
+			/*
+			document.baseURI / document.body / document.doctype / document.dcumentURI / document.domain / document.head
+			document.inputEncoding / document.lastModified / document.title / document.URL
+			document.forms / document.links / document.images / dcument.scripts
+			*/
+			
+			//document.write('isso é um teste');
+			//document.getElementById('imagem').alt = "Texto";
+			//document.getElementById('demo').style.color = 'pink';
+			
+			/*function funcao(){
+			 alert('opção trocada');
+			}*/
+			function funcao1(elemento){
+				elemento.innerHTML = 'deixa eu tirar sua roupinha?';
+			}
+			function funcao2(elemento){
+				elemento.innerHTML = 'Passe o mause aqui';
+			}
+			
+			/*
+			onclik / onload / onchange / onmouseover / onmouseout /
+			onfocus / onmousedown / onmouseup
+			*/
+			
+			
+		</script>
+	</body>
+	
+</html>

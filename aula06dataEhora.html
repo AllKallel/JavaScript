@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 06 - Data e hora</title>
+		
+	</head>
+	
+	<body>
+		<script>
+			var d = new Date();
+			//var d = new Date(86400000); //momento zero
+			//var d = new Date('Thu Jan 01 1970 21:00:00 GMT-0300 (Horário Padrão de Brasília)'); 
+			//objeto do tipo Date com string
+			//var d = new Date(ano: 2018, mes: , dia: , hora: , mituto: , segundo: , milisegundos: );
+		
+			console.log(d);
+			//Date() mostra a data completa
+			console.log(d.toUTCString());
+			//mostra somente ate o gmt
+			console.log(d.toDateString());
+			// mostra somente dia mês e ano. 
+			
+			/*
+			getDate() dia do mes
+			getDay() pega o dia da semana de 0 a 6
+			getFullYear() ano
+			getHours() pega as horas
+			getMinnutes() pega os minutos
+			getMonth() pega o mês, vai de 0 a 11
+			getSeconds() pega os segundos
+			getTime() quantidade de segunds a partir de 1 de janeiro de 1970
+			
+			também existem os set's da mesma forma, para alterar os valores. 
+			*/
+			
+			function formataData(data = new Date()){
+			var dia = data.getDate();
+			var mes = data.getMonth()+1;
+			var ano = data.getFullYear();
+			
+			if(dia.toString().length == 1)	dia = '0'+dia;
+			if(mes.toString().length == 1)  mes = '0'+mes;
+			
+			return dia+'/'+mes+'/'+ano;
+			
+			}
+			console.log(formataData());
+		</script>
+	</body>
+	
+</html>

@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 10 - BOM JS</title>
+		<style>
+		.zebrada{background: silver;}
+		</style>
+	</head>
+	
+	<body>
+		
+		<table class="zebra">
+			<thead>
+				<tr>
+					<th>nome</th>
+					<th>fone</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<th>allan</th>
+					<th>34 99660-4472</th>
+				</tr>
+				
+				<tr>
+					<th>sara</th>
+					<th>34 99660-4472</th>
+				</tr>
+				
+				<tr>
+					<th>kallel</th>
+					<th>34 99660-4472</th>
+				</tr>
+				
+				<tr>
+					<th>ornitorrinco</th>
+					<th>34 99660-4472</th>
+				</tr>
+				
+				<tr>
+					<th>barigovalda</th>
+					<th>34 99660-4472</th>
+				</tr>
+				
+				<tr>
+					<th>estrovildo</th>
+					<th>34 99660-4472</th>
+				</tr>
+			</body>
+			
+		
+		</table>
+		
+		<script>
+			window.onload = function(){
+			var zebrar = document.querySelectorAll('.zebra tbody tr');
+				for(i=0; i < zebrar.length ; i+=2){
+					zebrar[i].className = 'zebrada';
+				}
+			}
+			
+		</script>
+	</body>
+	
+</html>

@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 01 - JS</title>
+		
+	</head>
+	
+	<body>
+		<script>
+			
+			/*uma função é um bloco de codigo de executa determinada função
+			  uma função só é executada mediante uma chamada especifica à ela*/
+			  
+			  function alerta(msg){
+				alert(msg);
+			  };
+			  
+			  function metade(num){
+				return num/2;
+			  };
+			  
+			  function divisPor(num, por = 2){
+			  //é possivel setar o valor logo no inicio. essa é uma boa pratica em alguns casos pois evita erros. Quando o 
+			  //valor está setado o usuário pode escolher um outro, se quiser. do contrário o valor setado lá no começo fica
+			  //definido como valor padrão.
+				return num/por;
+			  };
+			  alerta('O resultado da divisão é '+ divisPor(15,3));	
+			
+		</script>
+	</body>
+	
+</html>
